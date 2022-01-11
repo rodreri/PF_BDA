@@ -1,0 +1,14 @@
+ORACLE_HOME:    /u01/app/oracle/product/19.3.0/dbhome_1
+System name:    Linux
+Node name:      pc-ermp-fi-unam
+Release:        5.4.17-2102.205.7.3.el8uek.x86_64
+Version:        #2 SMP Fri Sep 17 17:54:52 PDT 2021
+Machine:        x86_64
+Using parameter settings in server-side pfile /u01/app/oracle/product/19.3.0/dbhome_1/dbs/ini$
+System parameters with non-default values:
+  memory_target            = 768M
+  control_files            = "/u01/app/oracle/oradata/ERMPBDA2/control01.ctl"
+  control_files            = "/u02/app/oracle/oradata/ERMPBDA2/control02.ctl"
+  control_files            = "/u03/app/oracle/oradata/ERMPBDA2/control03.ctl"
+  db_name                  = "ermpbda2"
+2021-09-30T11:52:27.293802-05:00
