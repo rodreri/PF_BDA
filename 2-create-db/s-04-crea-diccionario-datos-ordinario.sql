@@ -1,5 +1,5 @@
 --@Autor: Erick Rodrigo Minero Pineda
---@Fecha creación: 30/09/2021
+--@Fecha creación: 11/01/2022
 --@Descripción: post-creación, crea tablas y vistas
 -- diccionario de datos
 

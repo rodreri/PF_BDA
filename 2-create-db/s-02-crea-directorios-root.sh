@@ -1,27 +1,27 @@
 # !bin/bash
 # @Autor: Erick Rodrigo Minero Pineda
-# @Fecha creación: 30/09/2021
+# @Fecha creación: 11/01/2022
 # @Descripción: permite crear los directorios para 
 # Data files, Redo Logs y Control Files
 
 # cambiando al directorio donde se almacenan los datos
 cd /u01/app/oracle/oradata
-mkdir ERMPBDA2
+mkdir MIPIPROY
 
 # cambiando dueño y permisos
-chown oracle:oinstall ERMPBDA2
-chmod 750 ERMPBDA2
+chown oracle:oinstall MIPIPROY
+chmod 750 MIPIPROY
 
 # creando directorios auxiliares
-cd /u02
-mkdir -p app/oracle/oradata/ERMPBDA2
-cd /u03
-mkdir -p app/oracle/oradata/ERMPBDA2
+cd /u022
+mkdir -p app/oracle/oradata/MIPIPROY
+cd /u023
+mkdir -p app/oracle/oradata/MIPIPROY
 
 # cambiando dueño y permisos
-cd /u02
+cd /u022
 chown -R oracle:oinstall *
 chmod -R 750 *
-cd /u03
+cd /u023
 chown -R oracle:oinstall *
 chmod -R 750 *
