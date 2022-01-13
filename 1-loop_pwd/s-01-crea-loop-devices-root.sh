@@ -13,12 +13,14 @@ mkdir /unam-bda-pf
 cd /unam-bda-pf
 
 # Creando archivos binarios
-dd if=/dev/zero of=disk22.img bs=1000M count=10
-dd if=/dev/zero of=disk23.img bs=1000M count=10
+echo "Creando archivos binarios"
+dd if=/dev/zero of=disk22.img bs=100M count=10
+dd if=/dev/zero of=disk23.img bs=100M count=10
 
 # Comprobar la creación de los archivos
 du -sh disk*.img 
 
+echo "Asociando a cada archivo"
 # Crear cada loop device asociándolo a su archivo creado
 losetup -fP disk22.img
 losetup -fP disk23.img
@@ -26,10 +28,12 @@ losetup -fP disk23.img
 # confirmar la creación del loop device
 losetup -a
 
+echo "Dando formato a los loops"
 # Dar formato a los archivos creados para que puedan ser montados
 mkfs.ext4 disk22.img
 mkfs.ext4 disk23.img
 
 # Crear el directorio u02 y u03 donde los dispositivos serán montados
+echo "Creando directorios de montaje"
 mkdir /u022
 mkdir /u023

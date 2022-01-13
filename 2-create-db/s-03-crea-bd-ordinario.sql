@@ -2,6 +2,10 @@
 --@Fecha creación: 11/01/2022
 --@Descripción: creando la base de datos
 
+whenever sqlerror exit rollback;
+-- connect sys/hola1234* as sysdba
+startup nomount
+
 create database mipiproy
  user sys identified by system2
  user system identified by system2
@@ -38,5 +42,5 @@ create database mipiproy
  datafile '/u01/app/oracle/oradata/MIPIPROY/undotbs01.dbf'
  size 200m reuse autoextend on next 5120k maxsize unlimited;
 
- alter user sys identified by system2;
+alter user sys identified by system2;
 alter user system identified by system2;
